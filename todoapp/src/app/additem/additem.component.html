@@ -1,0 +1,21 @@
+<h1>Add a TODO</h1>
+<div class="container my-3">
+<form (ngSubmit)="onsub()">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Title</label>
+    <input type="text" class="form-control" [(ngModel)]="title" id="title" name="title" aria-describedby="emailHelp">
+
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Description</label>
+    <input type="text" class="form-control" [(ngModel)]="description" id="description" name="description">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Serial.No</label>
+    <input type="text" class="form-control" [(ngModel)]="s_no" id="s_no" name="s_no" aria-describedby="emailemailHelp">
+
+  </div>
+
+  <button type="submit" class="btn btn-success" >Add a TODO</button>
+</form>
+</div>
